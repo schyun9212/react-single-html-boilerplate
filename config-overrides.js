@@ -17,6 +17,7 @@ module.exports = function override(config, env) {
         filename: "index.html",
         template: "public/index.html",
         inlineSource: ".(js|css)$",
+        inject: "body",
       }),
       new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin),
       new MiniCssExtractPlugin(),

@@ -41,8 +41,10 @@
     ]
   },
   "devDependencies": {
-    "html-webpack-inline-source-plugin": "^0.0.10",
+    "html-webpack-inline-source-plugin": "^1.0.0-beta.2",
     "html-webpack-plugin": "^5.5.0",
-    "react-app-rewired": "^2.2.1"
+    "mini-css-extract-plugin": "^2.7.0",
+    "react-app-rewired": "^2.2.1",
+    "webpack": "^5.75.0"
   }
 }

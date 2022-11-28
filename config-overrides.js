@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackInlineSourcePlugin = require("html-webpack-inline-source-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = function override(config, env) {
   //do stuff with the webpack config...
@@ -21,6 +22,7 @@ module.exports = function override(config, env) {
       }),
       new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin),
       new MiniCssExtractPlugin(),
+      new CompressionPlugin(),
     ],
   };
 };
